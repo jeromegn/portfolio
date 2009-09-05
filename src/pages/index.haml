@@ -1,0 +1,86 @@
+%section#about
+  = title "about"
+  .content
+    %aside#tweet
+      %h3 I tweet too
+      .content
+        %ul#twitter_update_list
+      %a.follow_me{:href => "http://twitter.com/jeromegn"}
+        You should follow me on twitter
+        %em here.
+    %article#journey
+      %h3 Journey so far
+      %p 
+        For at least 8 years now, I’ve been riveted on that thing called “the web”. This long journey as a self-taught web developer led me to becoming an expert in creating user interfaces. Over the years, I’ve developed countless mockups, prototypes and final user interfaces and I intend on pursuing my bettering of the web with more and more projects.
+        %a.more{:href => "#more"} more
+      %p.hidden
+        And hidden paragraph!
+      
+%section#work
+  = title "work"
+  .content
+    %nav#pieces
+      %ul
+        - @pieces = ["twinstang", "iweb", "iweborder", "iwebhub", "colektivo", "ekovia"]
+        - @pieces.each do |piece|
+          = partial("pieces/"+piece)
+
+%section#skills
+  = title "skills"
+  .content
+    %ul
+      = skill "User Interfaces", 100
+      = skill "Research", 90
+      = skill "Prototyping", 90
+      = skill "HTML/CSS", 90
+      = skill "Ruby", 80
+      = skill "Javascript (especially JQuery)", 70
+      = skill "Web Design (Graphics)", 70
+      = skill "Information Architecture", 60
+      = skill "Agile Project Management", 60
+      = skill "Server Administration", 50
+      = skill "Search Engine Optimization", 50
+
+%section#blog
+  = title "blog"
+  .content
+    %script{:src=>"http://feeds.feedburner.com/jgnblog?format=sigpro", :type=>"text/javascript"}
+
+%section#contact
+  = title "contact"
+  .content
+    %ul
+      %li#pro
+        %h3 Professionally
+        .content
+          %ul
+            %li#email
+              %script{:type=>"text/javascript"}
+                emailE=('j@' + 'jeromegn.com')
+                document.write('<a href="mailto:' + emailE + '">' + emailE + '</a>')
+              %noscript
+                %a
+                  Enable JS to see.
+            %li#linkedin
+              %a{:href => "http://www.linkedin.com/in/jeromegn"}
+                My professional profile.
+      %li#follow
+        %h3 Follow me
+        .content
+          %ul
+            %li#twitter
+              %a{:href => "http://twitter.com/jeromegn"}
+                You should follow me on Twitter.
+            %li#delicious
+              %a{:href => "http://www.delicious.com/jeromegn"}
+                I find stuff you'll want to read.
+      %li#others
+        %h3 Others
+        .content
+          %ul
+            %li#lastfm
+              %a{:href => "http://www.lastfm.com/user/jeromegn"}
+                Post & Progressive rock, rocks!
+            %li#rss
+              %a{:href => "http://feeds.feedburner.com/jgnblog"}
+                My blog's feed.
