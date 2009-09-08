@@ -3,6 +3,7 @@
   %head
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html;charset=utf-8'}/
     %title Jerome Gravel-Niquet - Web Developer specialist in User Experience Design based in Montreal
+    %link{:rel => "shortcut icon", :href => "http://jgn.me/favicon.ico"}
     = stylesheets :application, "jquery.fancybox"
   %body
     = yield
@@ -32,4 +33,15 @@
     %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
     %script{:type => "text/javascript", :src => "/javascripts/jquery.fancybox.js"}
     %script{:type => "text/javascript", :src => "/javascripts/app.js"}
-      
+    // Analytics
+    %script{:type => "text/javascript"}
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    %script{:type => "text/javascript"}
+      try {
+      var pageTracker = _gat._getTracker("UA-5201171-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    /[if lte IE 8]
+      %script{:type => "text/javascript", :src => "/javascripts/html5.js"}

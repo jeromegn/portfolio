@@ -1,7 +1,7 @@
 $(function(){
   $("a[rel=piece]").fancybox({
-    'imageScale': false,
-    'centerOnScroll': false
+    imageScale: false,
+    centerOnScroll: false
   });
   
   $("#about .more").click(function(){

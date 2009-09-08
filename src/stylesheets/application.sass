@@ -11,12 +11,12 @@ body
   header, section, nav, aside, article
     :display block
   
-  header, section
-    & > .content, & > .title
+  > header, section
+    > .content, > header
       :width 940px
       :margin 0 auto
   
-  header
+  > header
     :position absolute
     :top 0px
     :left 0
@@ -61,7 +61,7 @@ body
     
   section
     :background url(/images/bg.png) repeat-x top left
-    & > .title
+    > header
       :height 70px
       :position relative
       :padding-top 40px
@@ -96,7 +96,7 @@ body
         :margin-left 20px
     
     &#about
-      > .title
+      > header
         .top
           :display none
       > .content
@@ -179,7 +179,7 @@ body
                 :width 280px
                 :height 220px
                 :padding 10px
-                a
+                img
                   :display block
                   :width 280px
                   :height 220px
@@ -212,10 +212,10 @@ body
           :display none
           
     &#contact
-      & > .content
-        & > ul
+      > .content
+        > ul
           :overflow hidden
-          & > li
+          > li
             :float left
             :width 300px
             &#follow
@@ -234,6 +234,8 @@ body
                   :background
                     :position top left
                     :repeat no-repeat
+                  &:hover
+                    :text-decoration underline
                 &#twitter a
                   :background-image url(/images/icon_twitter.png)
                 &#delicious a

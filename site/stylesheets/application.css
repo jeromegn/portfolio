@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+*:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: #000;
+  background: #FFF; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: 400; }
+
+blockquote:before, blockquote:after {
+  content: ""; }
+
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333;
+  background: #fff;
+  padding-top: 155px; }
+  body header, body section, body nav, body aside, body article {
+    display: block; }
+  body > header > .content, body > header > header, body section > .content, body section > header {
+    width: 940px;
+    margin: 0 auto; }
+  body > header {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #9cb;
+    background: #6a9; }
+    body > header .tagline {
+      font-size: 20px;
+      font-family: Georgia, serif;
+      font-style: italic;
+      color: #fff; }
+      body > header .tagline strong {
+        font-weight: bold; }
+  body > nav {
+    width: 940px;
+    position: absolute;
+    margin: 0 0 0 -470px;
+    left: 50%;
+    top: 0; }
+    body > nav ul {
+      padding: 11px 20px;
+      position: absolute;
+      width: 260px;
+      background: #875;
+      top: 0;
+      right: 0; }
+      body > nav ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color: #e1ddd4;
+        font-weight: bold;
+        line-height: 1em;
+        padding: 8px 0; }
+        body > nav ul li a:hover {
+          color: #fff; }
+  body section {
+    background: url(/images/bg.png) repeat-x top left; }
+    body section > header {
+      height: 70px;
+      position: relative;
+      padding-top: 40px; }
+      body section > header .top {
+        position: absolute;
+        top: 43px;
+        right: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url(/images/top.png) no-repeat top left;
+        overflow: hidden;
+        text-indent: -9999px; }
+        body section > header .top:hover {
+          background-position: 0 100%; }
+    body section > .content {
+      overflow: hidden;
+      padding-bottom: 50px; }
+      body section > .content h3, body section > .content .headline {
+        color: #875;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px; }
+      body section > .content aside {
+        float: right;
+        width: 300px;
+        margin-left: 20px; }
+    body section#about > header .top {
+      display: none; }
+    body section#about > .content {
+      padding-bottom: 30px; }
+      body section#about > .content p .more {
+        padding: 2px 4px;
+        font-family: georgia, serif;
+        font-style: italic;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        background: #6a9; }
+      body section#about > .content article {
+        float: left;
+        width: 620px; }
+        body section#about > .content article p {
+          margin-bottom: 20px; }
+        body section#about > .content article .hidden {
+          display: none; }
+      body section#about > .content aside#tweet h3 {
+        margin-bottom: 10px; }
+      body section#about > .content aside#tweet .content #twitter_update_list li {
+        padding-top: 10px;
+        background: url(/images/twitter_bubble.png) no-repeat 10px 0px; }
+        body section#about > .content aside#tweet .content #twitter_update_list li span, body section#about > .content aside#tweet .content #twitter_update_list li > a {
+          display: block;
+          background: #e0eeeb;
+          font-size: 14px;
+          line-height: 1.4em; }
+        body section#about > .content aside#tweet .content #twitter_update_list li span {
+          padding: 10px 10px 5px 10px; }
+        body section#about > .content aside#tweet .content #twitter_update_list li > a {
+          padding: 0 10px 10px 10px;
+          font-size: 14px; }
+        body section#about > .content aside#tweet .content #twitter_update_list li a {
+          text-decoration: underline;
+          font-size: 12px;
+          color: #40907f; }
+      body section#about > .content aside#tweet > a {
+        color: #40907f;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        padding: 2px 0 10px 22px;
+        margin-top: 10px;
+        line-height: 16px;
+        background: url(/images/icon_twitter_small.png) no-repeat top left; }
+        body section#about > .content aside#tweet > a em {
+          border-bottom: 1px solid #b2d4cc; }
+    body section#work > .content {
+      padding-bottom: 10px; }
+      body section#work > .content nav ul {
+        overflow: hidden; }
+        body section#work > .content nav ul li {
+          width: 300px;
+          float: left;
+          margin-bottom: 40px; }
+          body section#work > .content nav ul li.center {
+            margin: 0 20px; }
+          body section#work > .content nav ul li .title {
+            text-align: center; }
+            body section#work > .content nav ul li .title h3 {
+              margin-bottom: 0; }
+            body section#work > .content nav ul li .title .role {
+              font-size: 16px;
+              color: #6a9; }
+              body section#work > .content nav ul li .title .role em {
+                font-family: Baskerville, Georgia, serif;
+                font-style: italic; }
+          body section#work > .content nav ul li .content {
+            background: url(/images/piece_bg.png) no-repeat center center;
+            width: 280px;
+            height: 220px;
+            padding: 10px; }
+            body section#work > .content nav ul li .content a {
+              display: block;
+              width: 280px;
+              height: 220px; }
+    body section#skills .content ul li {
+      height: 35px;
+      background: url(/images/skill_bg.png) no-repeat top left;
+      margin-bottom: 1px;
+      padding: 0 10px; }
+      body section#skills .content ul li h3 {
+        font-size: 18px;
+        color: #fff;
+        line-height: 33px;
+        padding-top: 2px; }
+    body section#blog .content ul li {
+      width: 300px;
+      float: left; }
+      body section#blog .content ul li.center {
+        margin: 0 20px; }
+      body section#blog .content ul li .headline {
+        display: block; }
+        body section#blog .content ul li .headline a {
+          color: #875; }
+    body section#blog .content #creditfooter {
+      display: none; }
+    body section#contact > .content > ul {
+      overflow: hidden; }
+      body section#contact > .content > ul > li {
+        float: left;
+        width: 300px; }
+        body section#contact > .content > ul > li#follow {
+          margin: 0 20px; }
+        body section#contact > .content > ul > li .content {
+          padding: 10px 10px 0 10px;
+          background: #f8f1e4; }
+          body section#contact > .content > ul > li .content li a {
+            color: #333;
+            text-decoration: none;
+            line-height: 32px;
+            padding-bottom: 10px;
+            padding-left: 42px;
+            display: block;
+            background-position: top left;
+            background-repeat: no-repeat; }
+            body section#contact > .content > ul > li .content li a:hover {
+              text-decoration: underline; }
+          body section#contact > .content > ul > li .content li#twitter a {
+            background-image: url(/images/icon_twitter.png); }
+          body section#contact > .content > ul > li .content li#delicious a {
+            background-image: url(/images/icon_delicious.png); }
+          body section#contact > .content > ul > li .content li#lastfm a {
+            background-image: url(/images/icon_lastfm.png); }
+          body section#contact > .content > ul > li .content li#rss a {
+            background-image: url(/images/icon_rss.png); }
+          body section#contact > .content > ul > li .content li#email a {
+            background-image: url(/images/icon_email.png); }
+          body section#contact > .content > ul > li .content li#linkedin a {
+            background-image: url(/images/icon_linkedin.png); }

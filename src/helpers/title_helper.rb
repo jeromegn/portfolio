@@ -1,8 +1,8 @@
 module TitleHelper
   def title(title)
-    "<div class='title'>"+
+    "<header>"+
     "  <h2><img src='/images/title_#{title}.png' alt='#{title.capitalize}' /></h2>"+
     "  <a href='#' class='top' title='Back to top'>Back to top</a>"+
-    "</div>"
+    "</header>"
   end
 end
