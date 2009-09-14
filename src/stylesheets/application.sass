@@ -199,17 +199,28 @@ body
             
     &#blog
       .content
-        ul li
-          :width 300px
-          :float left
-          &.center
-            :margin 0 20px
-          .headline 
-            :display block
-            a
-              :color #875
+        ul
+          :overflow hidden
+          li
+            :width 300px
+            :float left
+            &.center
+              :margin 0 20px
+            .headline 
+              :display block
+              a
+                :color #875
         #creditfooter
           :display none
+        a.more
+          :display block
+          :color #40907f
+          :text-decoration none
+          :line-height 50px
+          :background #E0EEEB
+          :text-align center
+          :margin-top 20px
+          :font-weight bold
           
     &#contact
       > .content
